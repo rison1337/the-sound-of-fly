@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="docs/music-studio-preview.gif" alt="Droffel Music Studio preview" width="960">
+  <video src="docs/music-studio-preview.mp4" autoplay loop muted playsinline controls width="960">
+    <img src="docs/music-studio-preview.gif" alt="Droffel Music Studio preview" width="960">
+  </video>
 </p>
 
 # Droffel Music Studio
