@@ -1,5 +1,5 @@
-<p align="center">
-  <video src="docs/music-studio-preview.mp4" autoplay loop muted playsinline controls width="960">
+﻿<p align="center">
+  <video src="https://github.com/rison1337/droffel-music-studio/raw/main/docs/music-studio-preview.mp4" autoplay loop muted playsinline controls width="960">
     <img src="docs/music-studio-preview.gif" alt="Droffel Music Studio preview" width="960">
   </video>
 </p>
@@ -59,3 +59,4 @@ See [Music Studio architecture](music_brain/ARCHITECTURE.md), [Music Studio docu
 ## License and attribution
 
 See [THIRD_PARTY.md](THIRD_PARTY.md) for dependencies and attribution. Generated assets and user-selected audio remain local to the machine running the tool.
+
