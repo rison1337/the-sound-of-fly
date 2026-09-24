@@ -1,0 +1,20 @@
+# Local environments and generated data
+.venv/
+.venv-reference/
+.tools/
+data/
+logs/
+**/.godot/
+**/runtime/
+__pycache__/
+.pytest_cache/
+*.mp4
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.m4a
+*.bin
+*.pt
+*.pth
+*.ckpt

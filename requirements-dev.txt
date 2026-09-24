@@ -1,0 +1,4 @@
+-r requirements.txt
+pytest>=8,<10
+lupa>=2.4,<3
+Pillow>=10

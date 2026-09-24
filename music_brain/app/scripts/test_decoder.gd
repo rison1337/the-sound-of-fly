@@ -1,0 +1,25 @@
+extends SceneTree
+
+func _initialize() -> void:
+	var parser=load("res://scripts/frame_decoder.gd").new()
+	var payload := PackedByteArray([10,0,255,10,13,123,125,0])
+	var packet := (JSON.stringify({"seq":1,"frame_bytes":payload.size()})+"\n").to_utf8_buffer()
+	packet.append_array(payload)
+	var second := (JSON.stringify({"seq":2,"frame_bytes":payload.size()})+"\n").to_utf8_buffer()
+	second.append_array(payload)
+	packet.append_array(second)
+	var results := []
+	for byte in packet: results.append_array(parser.feed(PackedByteArray([byte])))
+	assert(results.size()==2)
+	assert(results[0][1]==payload and results[1][1]==payload)
+	assert(results[1][0].seq==2)
+	assert(not parser.failed)
+	var bulk=load("res://scripts/frame_decoder.gd").new()
+	assert(bulk.feed(packet).size()==2)
+	var invalid=load("res://scripts/frame_decoder.gd").new()
+	invalid.feed('{"frame_bytes":5000000}\n'.to_utf8_buffer())
+	assert(invalid.failed)
+	var compressed := payload.compress(FileAccess.COMPRESSION_DEFLATE)
+	assert(compressed.decompress(payload.size(),FileAccess.COMPRESSION_DEFLATE)==payload)
+	print("FRAME_DECODER_OK fragmented / combined / binary-newline / bounded")
+	quit()

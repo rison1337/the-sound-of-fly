@@ -1,0 +1,5 @@
+logs/
+runtime/
+__pycache__/
+.pytest_cache/
+**/.godot/

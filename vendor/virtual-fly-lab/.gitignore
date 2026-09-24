@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+data/graph_malecns_v1.npz
+data/soma_positions.npz
+data/soma_positions_f32.bin
+data/annotations_malecns_v1.parquet
+world/data/sim_port.txt
+world/.godot/
+*.log
