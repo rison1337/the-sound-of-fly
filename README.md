@@ -1,10 +1,10 @@
 ﻿https://github.com/user-attachments/assets/a4ec87ea-d5f0-4d97-94c7-576e27f04fc7
 
-# Droffel Music Studio
+# The Sound of Fly
 
 **A procedural music visualizer driven by a fixed fly-brain simulation.** Choose a track, let six audio roles stimulate a 165,122-state neural model, and export a developing 2D/3D motion-design scene as MP4.
 
-Droffel Music Studio turns music into visual phrases instead of a repeating spectrum loop. Attacks prepare camera changes, bass bends mass, percussion cuts and opens surfaces, melodies reshape contours, and sustained sound holds the scene together.
+The Sound of Fly turns music into visual phrases instead of a repeating spectrum loop. Attacks prepare camera changes, bass bends mass, percussion cuts and opens surfaces, melodies reshape contours, and sustained sound holds the scene together.
 
 ## Features
 
@@ -46,4 +46,5 @@ For a direct 4K/60 export:
 Full generated recordings, audio files, neural binaries, Godot caches and rendered videos are excluded from the repository; only the lightweight preview above is included.
 
 See [Music Studio documentation](music_brain/README.md), [architecture](music_brain/ARCHITECTURE.md), and [third-party attribution](THIRD_PARTY.md). Neural activity is a control signal from a simulation; this project does not claim biological validation.
+
 
