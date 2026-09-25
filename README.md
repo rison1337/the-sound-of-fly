@@ -1,4 +1,4 @@
-https://github.com/user-attachments/assets/a4ec87ea-d5f0-4d97-94c7-576e27f04fc7
+﻿https://github.com/user-attachments/assets/a4ec87ea-d5f0-4d97-94c7-576e27f04fc7
 
 # Droffel Music Studio
 
@@ -43,6 +43,7 @@ For a direct 4K/60 export:
 .tools\godot\Godot_v4.7.2-stable_win64_console.exe --headless --path music_brain/app --script res://scripts/test_scene_geometry.gd --quit-after 10
 ```
 
-Generated recordings, audio files, neural binaries, Godot caches and rendered videos are excluded from the repository. The preview above is a lightweight excerpt from the renderer output.
+Full generated recordings, audio files, neural binaries, Godot caches and rendered videos are excluded from the repository; only the lightweight preview above is included.
 
 See [Music Studio documentation](music_brain/README.md), [architecture](music_brain/ARCHITECTURE.md), and [third-party attribution](THIRD_PARTY.md). Neural activity is a control signal from a simulation; this project does not claim biological validation.
+
